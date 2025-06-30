@@ -1,0 +1,392 @@
+/* Hero Section */
+.hero {
+  padding: 8rem 2rem 6rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
+  color: #1d1d1f;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #86868b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Gallery Controls */
+.gallery-controls {
+  padding: 2rem 0;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  border: 1px solid #d2d2d7;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #f5f5f7;
+}
+
+.filter-btn.active {
+  background-color: #1d1d1f;
+  color: #ffffff;
+  border-color: #1d1d1f;
+}
+
+/* Masonry Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item {
+  display: block;
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-item:hover .item-overlay {
+  opacity: 1;
+}
+
+.item-overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.item-overlay p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Load More Button */
+.load-more-container {
+  text-align: center;
+  padding: 2rem 0 4rem;
+}
+
+.load-more-btn {
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  background-color: #1d1d1f;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #363639;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 6rem 2rem;
+  background-color: #f5f5f7;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #1d1d1f;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-item {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-item i {
+  font-size: 2.5rem;
+  color: #1d1d1f;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.testimonial-item p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #1d1d1f;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonial-item span {
+  font-weight: 500;
+  color: #86868b;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1d1d1f;
+}
+
+.cta-content p {
+  font-size: 1.25rem;
+  color: #86868b;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 0.875rem 2rem;
+  border-radius: 30px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+  background-color: #1d1d1f;
+  color: white;
+  border: 1px solid #1d1d1f;
+}
+
+.cta-btn.primary:hover {
+  background-color: #363639;
+}
+
+.cta-btn.secondary {
+  background-color: transparent;
+  color: #1d1d1f;
+  border: 1px solid #1d1d1f;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #f5f5f7;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #86868b;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-details {
+  padding: 3rem;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1d1d1f;
+}
+
+.modal-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #515154;
+  margin-bottom: 2rem;
+}
+
+.modal-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #86868b;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 1.5rem 4rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+  
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .modal-image {
+    height: 300px;
+  }
+}
