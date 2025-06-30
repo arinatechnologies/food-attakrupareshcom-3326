@@ -1,0 +1,284 @@
+/* Main Layout */
+main {
+    overflow: hidden;
+}
+
+section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 8rem 2rem;
+    }
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 4rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-headline {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.hero-subhead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        gap: 4rem;
+        padding-top: 6rem;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-image {
+        flex: 1;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+
+    .hero-headline {
+        font-size: 3.5rem;
+    }
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background-color: #0052a3;
+    transform: translateY(-1px);
+}
+
+.btn-link {
+    color: #0066cc;
+    border: 1px solid rgba(0, 102, 204, 0.2);
+}
+
+.btn-link:hover {
+    background-color: rgba(0, 102, 204, 0.05);
+    border-color: rgba(0, 102, 204, 0.3);
+}
+
+.icon-arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.btn-link:hover .icon-arrow {
+    transform: translateX(2px);
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+}
+
+.section-header {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    margin-bottom: 1.5rem;
+}
+
+.feature-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Showcase Section */
+.showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.showcase-content {
+    flex: 1;
+}
+
+.showcase-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.showcase-content p {
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.showcase-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.showcase-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .showcase {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .showcase:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .showcase-content h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 18px;
+    padding: 4rem 2rem;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.cta p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .cta {
+        padding: 6rem 2rem;
+    }
+
+    .cta h2 {
+        font-size: 2.5rem;
+    }
+}
